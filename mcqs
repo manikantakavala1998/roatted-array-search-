@@ -1,0 +1,23 @@
+1. B)  To store dense embeddings and enable approximate nearest-neighbour similarity search at query time
+2. B)  Sentence-boundary chunking with a sliding overlap window
+3. B)  The result returned by an external tool after the agent executes an action
+4. B)  Attending to both left and right context simultaneously via bidirectional self-attention
+5. C)  Masked Language Modeling (MLM)
+6. C)  Each token attends to all preceding tokens and itself, but not future tokens
+7. B)  Decoder layers to attend to all encoder hidden states while generating each output token
+8. B)  KV-cache speeds up autoregressive inference by storing computed key-value pairs; gradient checkpointing reduces training memory by recomputing activations on the backward pass instead of storing them
+9. B) Maintain numerical precision during gradient accumulation and weight update steps
+10. B) Tiling the attention computation in SRAM to minimize slow HBM reads/writes and avoiding materializing the full N×N attention matrix
+11.  B)  ΔW = A × B where A ∈ R^(d×r) and B ∈ R^(r×k) with rank r << min(d, k)
+12.B
+13.C 
+14.B
+15.B 
+16.B 
+17.B 
+18.B 
+19.B 
+20.B
+
+
+
