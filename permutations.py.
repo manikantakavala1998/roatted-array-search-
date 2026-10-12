@@ -1,0 +1,18 @@
+def permute(s: str) -> list[str]:
+  res=[]  
+  chars=list(s)  
+  def backtrack(start):
+    if start==len(chars):
+      res.append("".join(chars))  
+      return 
+    for i in range(start, len(chars)):
+      chars[start], chars[i] = chars[i], chars[start]
+      backtrack(start+1) 
+      chars[start], chars[i] = chars[i], chars[start]
+  backtrack(0) 
+  return res 
+s1 = "abc"
+s2 = "ab"
+
+print("Input 1 Output:", permute(s1))
+print("Input 2 Output:", permute(s2))
